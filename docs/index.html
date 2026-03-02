@@ -14,15 +14,17 @@
 	<link href="sivo/css/base/sivo_base.css" rel="stylesheet" type="text/css">
 	<link href="sivo/css/base/sivo_custom.css" rel="stylesheet" type="text/css">
 	<link href="sivo/css/slideshow/slideshow.css" rel="stylesheet" type="text/css">
-	<link href="sivo/css/header/sivo_header_nav.css" rel="stylesheet" type="text/css">
+	<link href="sivo/css/base/sivo_header_nav.css" rel="stylesheet" type="text/css">
 	<link href="sivo/css/visualEffects/specialSection.css" rel="stylesheet" type="text/css">
 	<link href="sivo/css/visualEffects/effects.css" rel="stylesheet" type="text/css">
 	<link href="sivo/css/visualEffects/lines.css" rel="stylesheet" type="text/css">
 	<link href="sivo/css/interactive/job_menu.css" rel="stylesheet" type="text/css">
 	<link href="sivo/css/interactive/pageTabs.css" rel="stylesheet" type="text/css">
 
+    <link href="sivo/css/interactive/basic_form.css" rel="stylesheet" type="text/css">
+
 	<script src="sivo/js/sivo_header_nav_scripts.js"></script>
-	<script src="sivo/js/menuBar.js"></script>
+	<script src="sivo/js/menu_bar.js"></script>
 	<script>
 		window.onload=function()
 		{
@@ -142,10 +144,37 @@
 			<article class="modernArticle" id="other_tech">
                 <h2>Webové aplikace</h2>
                 <h3>ASP .NET Core</h3>
-                    <p>Věnuji se ve volném čase také vývoji webových aplikací v APS .NET Core a tato stránka poslouží jako frontend pro jendu mojí experimentální aplikaci.</p>
+                    <p>Věnuji se ve volném čase také vývoji webových aplikací v APS .NET Core a tato stránka poslouží jako frontend pro jednu mojí experimentální aplikaci.</p>
                 <br>
                 </article>
 		</section>
+        <section>
+			<h1 class="whatIdoHeader" id="contact-form">Kontakt</h1>
+            <form class="modernArticle container">
+                <table class="form-formater">
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="text" id="email" name="email" class="txtFld"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="jobType">Typ práce:</label></td>
+                        <td><select name="jobType" id="jobType">
+                                <option value="Elektrikářké">Čištění počítače</option>
+                                <option value="Projekční/stavební">Instalace / Reinstalace OS</option>
+                                <option value="Jiné">Jiné</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="msg">Zpráva:</label></td>
+                        <td><textarea id="msg" name="msg" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Odeslat" class="sendButton" onclick="alert('Připraveno pro ASP .NET Core verzi');"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
 		<div class="section" id="contact">
 			<article class="simitrut-contactArticle">
 				<h2 class="simitrut-contactTitle">Mé sociální sítě</h2>

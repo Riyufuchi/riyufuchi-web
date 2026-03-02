@@ -1,5 +1,5 @@
-const hrefs = ["index.html", "../index.html#aboutme", "../index.html#what_i_do_id", "../index.html#contact"];
-const hrefTexts = ["Úvod", "O mě", "Co dělám", "Sociální sítě"];
+const hrefs = ["index.html", "../index.html#aboutme", "../index.html#what_i_do_id", "../index.html#contact-form", "../index.html#contact"];
+const hrefTexts = ["Úvod", "O mě", "Co dělám", "Kontakt", "Sociální sítě"];
 const htmlRootFolder = "sivoWeb/";
 
 function createMenu()
