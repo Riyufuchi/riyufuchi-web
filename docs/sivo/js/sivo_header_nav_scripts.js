@@ -23,10 +23,6 @@ function showStaticMenu()
 		x.setAttribute("style","display: block;");
 	}
 }
-function isPhoneLandscape()
-{
-	return ((window.matchMedia("(orientation: landscape)").matches) && (/Mobi|Android/i.test(navigator.userAgent)));
-}
 function sizeDownLogo()
 {
 	let logo = document.getElementById("logoInHeader");

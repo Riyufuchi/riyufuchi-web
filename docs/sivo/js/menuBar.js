@@ -1,5 +1,5 @@
 const hrefs = ["index.html", "../index.html#aboutme", "../index.html#what_i_do_id", "../index.html#contact"];
-const hrefTexts = ["Home", "About me", "What I do", "Social"];
+const hrefTexts = ["Úvod", "O mě", "Co dělám", "Sociální sítě"];
 const htmlRootFolder = "sivoWeb/";
 
 function createMenu()
@@ -23,12 +23,17 @@ function menuBar()
 
         tbl.appendChild(a);
     }
-
+}
+function isPhoneLandscape()
+{
+	return ((window.matchMedia("(orientation: landscape)").matches));
 }
 function closeMenu()
 {
-	document.getElementById("sivoLinks").style.display = "none";
-    
+    if (!isPhoneLandscape())
+	    document.getElementById("sivoLinks").style.display = "none";
+    else
+        document.getElementById("sivoLinks").style.display = "block";
 }
 function footer()
 {
